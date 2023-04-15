@@ -15,6 +15,11 @@ export default class PuppeteerService {
   };
 
   static loginToYandex = async (page: Page) => {
+    if (
+      process.env.YANDEX_PASSWORD === undefined ||
+      process.env.YANDEX_USERNAME === undefined
+    )
+      throw new Error('Yandex credentials are not set as system variables!');
     try {
       await page.click(MainPage.buttons.Login);
       await page.waitForNetworkIdle();

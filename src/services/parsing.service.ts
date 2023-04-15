@@ -1,9 +1,6 @@
-import fs from 'fs';
 import {Page} from 'puppeteer';
 import ClientPage from './../pages/client.page';
 import WaitingService from './../services/waiting.service';
-
-// const imageSet = new Set();
 
 export default class ParsingService {
   static imageSet = new Set();
@@ -29,10 +26,6 @@ export default class ParsingService {
 
       this.imagesAfterRepeat = images;
     } while (!this.isRepeated);
-
-    this.imageSet.forEach((value, valueAgain, imageSet) => {
-      fs.appendFileSync('1.txt', `${value}\n`);
-    });
     return this.imageSet;
   };
 }

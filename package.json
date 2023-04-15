@@ -1,6 +1,6 @@
 {
   "name": "yandex-disk-photo-crawler",
-  "version": "0.0.1",
+  "version": "1.0",
   "description": "Yandex Disk unlimited photo library cawler",
   "main": "index.js",
   "scripts": {
