@@ -26,7 +26,7 @@
   "homepage": "https://github.com/overdd/yandex-disk-photo-crawler#readme",
   "dependencies": {
     "@types/node": "^18.11.18",
-    "puppeteer": "^19.5.2",
+    "puppeteer": "^23.7.1",
     "puppeteer-tsd": "^0.0.2"
   },
   "devDependencies": {
